@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth
+}
+/*MENU*/
+.navbar{
+    display: flex;
+   
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-bottom: 170px;
+   
+    
+    
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    color: rgb(3, 3, 3);
+   
+}
+.collapse .navbar-nav .nav-item  a:hover{
+    background-color: #e4e4e4;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-radius: 35%;
+    transition: all 0.22s;
+    
+}
+
+/*TEXTO ANIMADO presentacion*/
+.hero{
+    display: flex;
+    margin-top: 260px;
+    margin-left: 300px;
+}
+.hero .static-txts2 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 400;
+
+}
+
+.hero .dynamic-txts2{
+    margin-left: 15px;
+    height: 98px;
+    line-height: 98px;
+    overflow: hidden;
+}
+
+.dynamic-txts2 li{
+    list-style: none;
+    color: #16f37d;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -390px;
+    }
+}
+
+.dynamic-txts2 li span{
+    position: relative;
+    margin: 5px;
+    line-height: 98px;
+}
+
+.dynamic-txts2 li span::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    border-left: 2px solid #16f37d;
+    animation: typing 3s steps(18) infinite;
+}
+
+@keyframes typing{
+    48%,68%{
+        left: calc(100% + 38px);
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+/*Presentacion*/
+.presentacion p{
+    color: #feffff;
+    display: flexbox;
+    width: 550px;
+    height: 150px;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 860px;
+    margin-bottom: 200px;
+    border: 2px solid rgb(131, 7, 255);;
+    box-shadow: 0 0 10px 0 rgb(131, 7, 255) inset, 0 0 10px 4px  rgb(131, 7, 255) ;
+}
+
+
+/*foto Unicornio */
+.unicornio{
+    position: absolute;
+    width: 60px;
+    top: 20%;
+    left: 48%;
+    transition: all 0.12s;
+}
+
+
+/*foto cat */
+.cat{
+    position: absolute;
+    width: 200px;
+    top: 90%;
+    left: 15%;
+    animation: float 3.2s ease-in-out infinite;
+}
+
+
+
+@keyframes float{
+0%{
+transform: translateY(0px);
+}
+50%{
+    transform: translateY(-80px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+
+.shadowCat{
+    background: #db9edf;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    animation: expand 3.5s infinite;
+    border-radius: 50%;
+    top: 119%;
+    left: 17.5%;
+}
+
+@keyframes expand{
+    0%,100%{
+        transform: scale(0.5);
+    }50%{
+        transform: scale(1);
+    }
+}
+
+/*LOGOS HABILIDADES*/
+
+.habilidades{
+text-align: center;
+font-size: 40px;
+color: #e4e4e4;
+margin-top: 100px;
+margin-bottom: 30px;
+font-weight: 100px;
+
+}
+
+
+.wrapper2{
+    position: relative;
+    top: 50%;
+    margin-top: 100px;
+    margin-bottom: 750px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 850px;
+   
+}
+
+.wrapper2 ul{
+    list-style: none;
+}
+
+.wrapper2 ul li{
+   width: 75px;
+   height: 75px;
+   margin: 80px 90px;
+   text-align: center;
+   cursor: pointer;
+   float: left;
+   transition: all 0.22s;
+  
+}
+.wrapper2 ul li p{
+color: #ffffff;
+margin-left: 15px;
+margin-top: 5px;
+font-size: 14px;
+
+}
+
+
+
+/*PORTAFOLIO*/
+
+/*titulo*/
+
+.programas h2{
+text-align: center;
+font-size: 40px;
+color: #e4e4e4;
+margin-top: 900px;
+margin-bottom: 100px;
+font-weight: 100px;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 500px;
+    
+}
+
+.container .card{
+    width: 300px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.22s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #00cafd;
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/*FINAL*/
+.final .mas{
+color: #fefefe;
+text-align: center;
+margin-top:700px;
+border: 2px solid rgb(131, 7, 255);
+box-shadow: 0 0 10px 0 rgb(131, 7, 255) inset, 0 0 10px 4px rgb(131, 7, 255) ;
+}
+
+/*CAROUSEL*/
+
+
+
+
+/**********************************RESPONSIVE*********************************************************/
+@media only screen and (max-width: 758px) {
+   /*Responsive*/
+   
+   
+    .img_presentacion img{
+       width: 50px; 
+       
+    }
+    /*Logos habilidades*/
+   .wrapper2{
+    margin-top: 70px;
+    margin-bottom: 600px;
+    width: 480px;
+   }
+    .wrapper2 ul li{
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        margin: 45px 35px;
+        text-align: center;
+        cursor: pointer;
+        float: left;
+     }
+     .wrapper2{
+        left: 49%;
+        margin-top: 400px;
+    }
+
+     .wrapper2 ul li p{
+        color: #00cafd;
+        margin-left: 17px;
+       
+        }
+    
+    
+        .habilidades{
+            box-shadow: 0 0 10px 0 #00cafd inset, 0 0 10px 4px  #00cafd ;
+        }
+        /*Portafolio*/
+        .programas{
+            box-shadow: 0 0 10px 0 #00cafd inset, 0 0 10px 4px  #00cafd ;
+        
+        }
+
+        /*Texto animado*/
+        .hero .static-txts2 {
+            font-size: 30px;
+        }
+        .hero{
+            margin-top: 180px;
+            margin-bottom: 80px;
+            margin-left: 0px;
+        }
+    /*foto Unicornio */
+    .unicornio{
+        position: relative;
+        width: 60px;   
+        left: 42%;
+        top: -430px;
+        transition: all 0.22s;
+    }
+
+    /*foto cat*/
+    .cat{
+        top: 110%;
+        left: 27%;
+    }
+    .shadowCat{
+        top: 139%;
+        left: 35%;
+    }
+
+    /*nav*/
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.733);
+        margin-bottom:150px ;
+        transition: all 0.5s;
+    }
+    .collapse .navbar-nav .nav-item .nav-link:hover{
+        background-color: rgb(234, 234, 234);
+        color: #000000;
+       
+    }
+    .collapse .navbar-nav .nav-item .nav-link{
+        border-radius: 0%;
+        transition: all 0.5s;
+        
+    }
+   
+
+
+    /*PRESENTACION*/
+    .about_me{
+        margin-right: 5%;
+        margin-top: 80px;
+    }
+
+    .presentacion p{
+        color: #feffff;
+        display: flexbox;
+        width: 450px;
+        height: 150px;
+        text-align: center;
+        margin-left: 15px;
+        box-shadow: 0 0 10px 0 #00cafd inset, 0 0 10px 4px  #00cafd ;
+    }
+    .container{
+        margin-bottom: 400px;
+    }
+
+    /*FINAL*/
+.final .mas{
+    margin-top:2000px;
+    }
+
+    /*PROGRAMAS*/
+    .programas h2{  
+        margin-top: 600px;
+        }
+}
