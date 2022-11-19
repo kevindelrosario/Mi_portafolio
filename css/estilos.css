@@ -245,7 +245,7 @@ font-weight: 100px;
 .container .card{
     width: 300px;
     height: 350px;
-    background-color: #ffffff;
+    background-color: #ff3c00;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
     overflow: hidden;
@@ -256,7 +256,7 @@ font-weight: 100px;
 
 .container .card:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px #00cafd;
+    box-shadow: 0 12px 16px #ca0000;
 }
 
 .container .card img{
@@ -277,7 +277,10 @@ font-weight: 100px;
 .container .card a{
     font-weight: 500;
     text-decoration: none;
-    color: #3498db;
+    color: #ffffff;
+}
+.modal-content a img{
+    width: 100%;
 }
 
 /*FINAL*/
@@ -310,16 +313,18 @@ box-shadow: 0 0 10px 0 rgb(131, 7, 255) inset, 0 0 10px 4px rgb(131, 7, 255) ;
     width: 480px;
    }
     .wrapper2 ul li{
-        width: 75px;
+        width: 60px;
         height: 75px;
         line-height: 75px;
-        margin: 45px 35px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        margin-left: 40px;
         text-align: center;
         cursor: pointer;
         float: left;
      }
      .wrapper2{
-        left: 49%;
+        left: 68%;
         margin-top: 400px;
     }
 
@@ -341,7 +346,9 @@ box-shadow: 0 0 10px 0 rgb(131, 7, 255) inset, 0 0 10px 4px rgb(131, 7, 255) ;
 
         /*Texto animado*/
         .hero .static-txts2 {
-            font-size: 30px;
+            font-size: 20px;
+            margin-left: 20px;
+            
         }
         .hero{
             margin-top: 180px;
