@@ -22,14 +22,14 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portafolio"onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive"onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -47,8 +47,8 @@
                 <h2>Programador Backend -Java/ Kotlin/ SQL</h2>
             </div>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-montero-del-rosario-248384177/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </section>
@@ -71,64 +71,79 @@
 
     <!-- SECCION SKILLS-->
 
-    
+
 
     <!-- SECCION PORTAFOLIO-->
 
     <section class="portafolio" id="portafolio">
         <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
+            <h2>PORTFOLIO</h2>
             <div class="galeria">
+                <!--Proyecto-->
                 <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
+                    <img src="img/fondo.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
+                       <!--Proyecto-->
+                       <div class="proyecto">
+                        <img src="img/fondo.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                        <!--Proyecto-->
                 <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
+                    <img src="img/fondo.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
+                            <!--Proyecto-->
                 <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
-                </div> <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
-                </div> <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
-                </div> <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
-                </div> <div class="proyecto">
-                    <img src="img_proyectos/Algoritmo-PROGRAMACION.jpg" alt="">
+                    <img src="img/fondo.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
                 </div>
-        </div>
+                            <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                            <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer-->
 
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-montero-del-rosario-248384177/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
