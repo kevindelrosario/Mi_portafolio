@@ -125,6 +125,32 @@ font-weight: normal;
 
 }
 
+/**************FOTO DEL GATO *************/
+.cat{
+    position: absolute;
+    width: 200px;
+    top: 145%;
+    left: 15%;
+    animation: float 3.2s ease-in-out infinite;
+}
+
+
+
+@keyframes float{
+0%{
+transform: translateY(0px);
+}
+50%{
+    transform: translateY(-80px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+
+
+
+
 /************SOBRE MI**************/
 
 .sobremi{
@@ -204,6 +230,7 @@ font-weight: normal;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    z-index: 1;
 }
 
 
@@ -214,9 +241,7 @@ font-weight: normal;
     padding: 20px;
 }
 
-.wrapper2 ul li img:hover{
 
-}
 
 /********************SECCION PORTAFOLIO***************************/
 .portafolio{
@@ -456,5 +481,12 @@ form{
 .portafolio .galeria .proyecto img{
     width: 100%;
 }
+
+.cat{
+    width: 150px;
+    top: 158%;
+    left: 33%;
+}
+
 
 }
