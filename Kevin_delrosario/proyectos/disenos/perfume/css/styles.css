@@ -1,0 +1,51 @@
+
+body{
+    background-color: blanchedalmond;
+}
+
+.cajaMadre{
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    width: 600px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    margin-left: 30%;
+
+}
+
+.textos{
+    width: 100%;
+    padding: 25px;
+}
+
+.perfume{
+    color: rgb(162, 162, 162);
+   
+}
+
+h1{
+    font-size: 25px;
+}
+
+.precio{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(23, 117, 0);
+}
+.precio span{
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: rgb(96, 96, 96);
+}
+button{
+    color: white;
+   border: 0ch;
+   background-color: rgb(10, 146, 101);
+   width: 250px; 
+   height: 50px;
+   font-size: 20px;
+   border-radius: 10px;
+}

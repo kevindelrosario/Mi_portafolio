@@ -1,0 +1,114 @@
+/*
+grid
+*/
+.madre{
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+   
+}
+ 
+   
+
+.madre_card--laura{
+   grid-column: 1/3;
+   grid-row: 1/1;
+}
+.madre_card--guillermo{
+    grid-row: 2/1;
+}
+
+.madre_card--marta{
+grid-row: 1/ span 2;
+height: 100%;
+}
+.madre_card--sergio{
+    grid-column: 2/ span 2;
+    height: 100%;
+}
+.madre_card--angel{
+    height: 100%;
+}
+/*********************/
+
+/********ESTILOS GENERALES*******/
+.madre{
+    font-family:'Barlow Semi Condensed', sans-serif;
+    color: white;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.madre_card{
+    border-radius: 10px;
+    padding: 15px;
+ }
+
+.madre_card__img{
+    float: left;
+    margin: 15px;
+    display: flex;
+}
+
+
+h2{
+font-size: 15px;
+color: rgb(179, 179, 179);
+}
+
+
+
+
+/************************/
+.madre_card--laura{
+    background-color: rgb(140, 61, 213);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.madre_card--laura:hover{
+    background-color: rgb(86, 5, 161);
+}
+
+.madre_card--guillermo{
+    background-color: hsl(219, 29%, 14%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.madre_card--guillermo:hover{
+    background-color: hsl(217, 70%, 36%);
+}
+
+.madre_card--marta{
+    background-color: hsl(321, 87%, 55%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.madre_card--marta:hover{
+    background-color: hsl(321, 89%, 25%);
+}
+
+.madre_card--angel{
+    background-color: hsl(261, 63%, 41%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.madre_card--angel:hover{
+    background-color: hsl(261, 94%, 52%);
+}
+
+.madre_card--sergio{
+    background-color: hsl(217, 94%, 42%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.madre_card--sergio:hover{
+    background-color: hsl(194, 94%, 42%);
+}
+
