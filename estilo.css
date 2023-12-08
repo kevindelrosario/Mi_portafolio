@@ -7,6 +7,8 @@
     padding: 0;
 }
 
+
+
 html{
     /*me permite deslizar cuando hago clic en los links del menu*/
     scroll-behavior: smooth;
@@ -194,6 +196,10 @@ transform: translateY(0px);
     color: #fff;
     position: relative;
     z-index: 10;
+}
+.sobremi button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .sobremi button .overlay{
