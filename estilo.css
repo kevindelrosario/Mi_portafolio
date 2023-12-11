@@ -222,7 +222,7 @@ transform: translateY(0px);
     display: block;
     justify-content: center;
     padding: 120px;
-    background-color: #1e2326;
+    background-color: #15191b;
     color: #fff;
     padding: 150px 50px;
 }
@@ -455,7 +455,7 @@ font-size: 15px;
 color: #1e2326;
 }
  .proyecto .overlay a:hover{
-    color: #00a2ff;
+    color: #3211c5;
     }
 
 
