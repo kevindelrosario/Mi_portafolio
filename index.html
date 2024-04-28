@@ -30,7 +30,7 @@
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -48,7 +48,7 @@
             </div>
             <div>
                 <h1>Kevin del Rosario</h1>
-                <h2>Programador Backend -Java/ Kotlin/ SQL</h2>
+                <h2>Programador Backend <br> C# (.NET) / Java/ Kotlin/ SQL</h2>
             </div>
             <div class="redes">
                 <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
@@ -67,13 +67,14 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>SOBRE MÍ</h2>
-            <p><span>Hola, soy Kevin del Rosario, </span> programador con conocimientos en el desarrollo backend y buena base de frontend...</p>
+            <span>Hola, soy Kevin del Rosario, </span> Programador backend junior con experiencia practica trabajando con C# y .Net.
+        <br> Apasionado por la resolución de problemas y el aprendizaje continuo. Capacidad demostrada para trabajar en equipo y contribuir eficazmente en proyectos colaborativos. </p>
         </div>
         <!--Boton descargar curriculum-->
         <button>
-            <a href="Currículum.pdf" download>
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
+            <a href="Kevin del Rosario.pdf" download>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
             </a>
         </button>
     </section>
@@ -96,11 +97,11 @@
             </li>
             <li class="android"><img src="logos/icons8-oreja-96.png" alt="BOOTSTRAP">
             </li>
-        </li>
-        <li class="android"><img src="logos/icons8-visual-studio-96.png" alt="Visual studio code">
-        </li>
-        <li class="android"><img src="logos/icons8-c-100.png" alt="C#">
-        </li>
+            </li>
+            <li class="android"><img src="logos/icons8-visual-studio-96.png" alt="Visual studio code">
+            </li>
+            <li class="android"><img src="logos/icons8-c-100.png" alt="C#">
+            </li>
         </ul>
     </section>
 
@@ -111,7 +112,15 @@
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
             <div class="galeria">
-
+                <!--Proyecto 4 PowerSim -->
+                <div class="proyecto">
+                    <img src="img_proyectos/powerSim.png" alt="">
+                    <div class="overlay">
+                        <h3>POWERSIM</h3>
+                        <p>Simulador de potenciometro</p>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg4">Saber más...</a>
+                    </div>
+                </div>
                 <!--Proyecto 1 CONSOLA -->
                 <div class="proyecto">
                     <img src="img_proyectos/consola.webp" alt="">
@@ -130,7 +139,7 @@
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg2">Saber más...</a>
                     </div>
                 </div>
-                <!--Proyecto 3 Portafolio-->
+                <!--
                 <div class="proyecto">
                     <img src="img_proyectos/1702297577756.jpg" alt="">
                     <div class="overlay">
@@ -139,13 +148,13 @@
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg3">Saber más...</a>
                     </div>
                 </div>
-          
-             
-              
-        </div>
-    </section>
+Proyecto 3 Portafolio-->
 
-    <!-- SECCION FORMULARIO-->
+
+            </div>
+    </section>
+    <!--
+   
     <section class="formulario" id="contacto">
         <div class="form-content">
             <h2>Contactar (Aun no funcional) </h2>
@@ -168,7 +177,7 @@
             </form>
         </div>
     </section>
-
+-->
     <!-- SECCION FOOTER-->
 
     <footer>
@@ -216,33 +225,33 @@
         </div>
     </div>
 
-     <!--PROGRAMA 3-->
-     <div tabindex="-1" aria-labelledby="modalProg3" aria-hidden="true" class="modal fade" id="modalProg3">
+    <!--PROGRAMA 3-->
+    <div tabindex="-1" aria-labelledby="modalProg3" aria-hidden="true" class="modal fade" id="modalProg3">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <!--***CONTENIDO AQUI***-->
                 <!--Esta imagen lleva a la pagina del gym-->
-                <a href="https://github.com/kevindelrosario/kevindelrosario.github.io"
-                    target="_blank"><img src="img_proyectos/1702297577756.jpg" alt=""></a>
+                <a href="https://github.com/kevindelrosario/kevindelrosario.github.io" target="_blank"><img
+                        src="img_proyectos/1702297577756.jpg" alt=""></a>
                 <!--***DESCRIPCION AQUI***-->
                 <p>Portafolio para presentar mis proyectos utilizando algunas herramientas aprendidas en clase. </p>
             </div>
         </div>
     </div>
 
-        <!--PROGRAMA 4-->
-        <div tabindex="-1" aria-labelledby="modalProg4" aria-hidden="true" class="modal fade" id="modalProg4">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <!--***CONTENIDO AQUI***-->
-                    <!--Esta imagen lleva a la pagina del gym-->
-                    <a href="https://github.com/kevindelrosario/Administrador-de-empleados"
-                        target="_blank"><img src="img_proyectos/administracionEmpleados.jpg" alt=""></a>
-                    <!--***DESCRIPCION AQUI***-->
-                    <p>Software de escritorio creado con C# y .NET para la administración de los miembros de una empresa con ayuda de una base de datos SQL. </p>
-                </div>
+    <!--PROGRAMA 4-->
+    <div tabindex="-1" aria-labelledby="modalProg4" aria-hidden="true" class="modal fade" id="modalProg4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!--***CONTENIDO AQUI***-->
+                <!--Esta imagen lleva a la pagina del gym-->
+                <a href="https://github.com/kevindelrosario/PowerSIM/tree/main" target="_blank"><img
+                        src="img_proyectos/powerSim2.png" alt=""></a>
+                <!--***DESCRIPCION AQUI***-->
+                <p>Software en proceso de desarrollo en C# y .NET con el cual se intenta simular un potenciometro de una bicicleta para la empresa ROTOR.. </p>
             </div>
         </div>
+    </div>
 
     <!--****************BOOTSTRAP / JAVASCRIP********************-->
     <!--Esta linea sirve para que funcione el modal-->
