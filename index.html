@@ -30,7 +30,7 @@
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -48,7 +48,7 @@
             </div>
             <div>
                 <h1>Kevin del Rosario</h1>
-                <h2>Programador Backend -Java/ Kotlin/ SQL</h2>
+                <h2>Programador Backend <br> C# (.NET) / Java/ Kotlin/ SQL</h2>
             </div>
             <div class="redes">
                 <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
@@ -67,13 +67,14 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>SOBRE MÍ</h2>
-            <p><span>Hola, soy Kevin del Rosario, </span> Apasionado de la informática con conocimientos en el desarrollo backend y buena base de frontend...</p>
+            <span>Hola, soy Kevin del Rosario, </span> Programador backend junior con experiencia practica trabajando con C# y .Net.
+        <br> Apasionado por la resolución de problemas y el aprendizaje continuo. Capacidad demostrada para trabajar en equipo y contribuir eficazmente en proyectos colaborativos. </p>
         </div>
         <!--Boton descargar curriculum-->
         <button>
-            <a href="Currículum.pdf" download>
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
+            <a href="Kevin del Rosario.pdf" download>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
             </a>
         </button>
     </section>
@@ -96,9 +97,11 @@
             </li>
             <li class="android"><img src="logos/icons8-oreja-96.png" alt="BOOTSTRAP">
             </li>
-        </li>
-        <li class="android"><img src="logos/icons8-visual-studio-96.png" alt="Visual studio code">
-        </li>
+            </li>
+            <li class="android"><img src="logos/icons8-visual-studio-96.png" alt="Visual studio code">
+            </li>
+            <li class="android"><img src="logos/icons8-c-100.png" alt="C#">
+            </li>
         </ul>
     </section>
 
@@ -109,7 +112,15 @@
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
             <div class="galeria">
-
+                <!--Proyecto 4 PowerSim -->
+                <div class="proyecto">
+                    <img src="img_proyectos/powerSim/inicio.jpg" alt="">
+                    <div class="overlay">
+                        <h3>POWERSIM</h3>
+                        <p>Simulador de potenciometro</p>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg3">Saber más...</a>
+                    </div>
+                </div>
                 <!--Proyecto 1 CONSOLA -->
                 <div class="proyecto">
                     <img src="img_proyectos/consola.webp" alt="">
@@ -128,49 +139,26 @@
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg2">Saber más...</a>
                     </div>
                 </div>
-                <!--Proyecto 3 SOCKETS-->
-                <div class="proyecto">
-                    <img src="img_proyectos/socket-1.webp" alt="">
+                
+             <!--   <div class="proyecto">
+                    <img src="img_proyectos/1702297577756.jpg" alt="">
                     <div class="overlay">
-                        <h3>SOCKETS</h3>
-                        <p>Cliente/servidor</p>
+                        <h3>Kevin del Rosario</h3>
+                        <p>Portafolio web.</p>
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg3">Saber más...</a>
                     </div>
                 </div>
-                <!--Proyecto 4 ADMINISTRACION EMPLEADOS-->
-                <div class="proyecto">
-                    <img src="img_proyectos/administracionEmpleados.jpg" alt="">
-                    <div class="overlay">
-                        <h3>ADMINISTRACION EMPLEADOS</h3>
-                        <p>C# /.NET</p>
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg4">Saber más...</a>
-                    </div>
-                </div>
-                <!--Proyecto-->
-                <div class="proyecto">
-                    <img src="img/fondo.jpg" alt="">
-                    <div class="overlay">
-                        <h3>EN PROCESO</h3>
-                        <p>....</p>
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg1">Saber más...</a>
-                    </div>
-                </div>
-                <!--Proyecto-->
-                <div class="proyecto">
-                    <img src="img/fondo.jpg" alt="">
-                    <div class="overlay">
-                        <h3>EN PROCESO</h3>
-                        <p>....</p>
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalProg1">Saber más...</a>
-                    </div>
-                </div>
-        </div>
-    </section>
+                -->
+<!--Proyecto 3 Portafolio--> 
 
-    <!-- SECCION FORMULARIO-->
+
+            </div>
+    </section>
+    <!--
+   
     <section class="formulario" id="contacto">
         <div class="form-content">
-            <h2>Contactar</h2>
+            <h2>Contactar (Aun no funcional) </h2>
             <form action="https://formsubmit.co/kevinfmdelrosario@gmail.com" method="POST">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name">
@@ -190,7 +178,7 @@
             </form>
         </div>
     </section>
-
+-->
     <!-- SECCION FOOTER-->
 
     <footer>
@@ -217,10 +205,11 @@
             <div class="modal-content">
                 <!--***CONTENIDO AQUI***-->
                 <!--Esta imagen lleva a la pagina del gym-->
-                <a href="https://github.com/kevindelrosario/Pahtfile-Consola.git" target="_blank"><img
-                        src="img_proyectos/consola.webp" alt=""></a>
+                <a href="https://github.com/kevindelrosario/Pahtfile-Consola.git" target="_blank">
+                    <img src="img_proyectos/consola.webp" alt="">
+                    </a>
                 <!--***DESCRIPCION AQUI***-->
-                <p>Representacion de una consola con rutas(Path), directorios, etc... </br>(Trabajo en equipo)</p>
+                <p>Simulacion de una consola con rutas(Path), directorios, etc... </br>(Trabajo en equipo)</p>
             </div>
         </div>
     </div>
@@ -238,33 +227,79 @@
         </div>
     </div>
 
-     <!--PROGRAMA 3-->
-     <div tabindex="-1" aria-labelledby="modalProg3" aria-hidden="true" class="modal fade" id="modalProg3">
+    <!--PROGRAMA 3 (IMAGENES QUE SE MUEVEN)-->
+    <div tabindex="-1" aria-labelledby="modalProg3" aria-hidden="true" class="modal fade" id="modalProg3">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <!--***CONTENIDO AQUI***-->
-                <!--Esta imagen lleva a la pagina del gym-->
-                <a href="https://gitlab.com/kevinfmdelrosario/dom/-/tree/master/tareaDOM/src?ref_type=heads"
-                    target="_blank"><img src="img_proyectos/socket-1.webp" alt=""></a>
+              
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img_proyectos/powerSim/polar1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_proyectos/powerSim/polar2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_proyectos/powerSim/power3.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_proyectos/powerSim/polar4.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+                <!---
+                <a href="https://github.com/kevindelrosario/kevindelrosario.github.io" target="_blank"><img
+                        src="img_proyectos/1702297577756.jpg" alt=""></a> -->
                 <!--***DESCRIPCION AQUI***-->
-                <p>Envio y obtención de información entre un servidor y el cliente...  </p>
+                <p>Software en proceso de desarrollo en .NET con C# con el cual se intenta simular un potenciometro de una bicicleta para la empresa ROTOR... Lee los datos de pedaladas guardadas en un archivo excel, representa estos datos en una grafica polar y promedia los resultados indicando la potencia real e ideal.  </p>
+                
             </div>
         </div>
     </div>
 
-        <!--PROGRAMA 4-->
-        <div tabindex="-1" aria-labelledby="modalProg4" aria-hidden="true" class="modal fade" id="modalProg4">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <!--***CONTENIDO AQUI***-->
-                    <!--Esta imagen lleva a la pagina del gym-->
-                    <a href="https://github.com/kevindelrosario/Administrador-de-empleados"
-                        target="_blank"><img src="img_proyectos/administracionEmpleados.jpg" alt=""></a>
-                    <!--***DESCRIPCION AQUI***-->
-                    <p>Software de escritorio creado con C# y .NET para la administración de los miembros de una empresa con ayuda de una base de datos SQL. </p>
+    <!--PROGRAMA 4-->
+    <div tabindex="-1" aria-labelledby="modalProg4" aria-hidden="true" class="modal fade" id="modalProg4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <clas class="modal-content">
+                <!--***CONTENIDO AQUI***-->
+                <!--Esta imagen lleva a la pagina del gym-->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img_proyectos/administracionEmpleados.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_proyectos/java-xml-logo.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_proyectos/consola.webp" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                 </div>
+                <!--***DESCRIPCION AQUI***-->
+                <p>Software en proceso de desarrollo en .NET con C# con el cual se intenta simular un potenciometro de una bicicleta para la empresa ROTOR... Lee los datos de pedaladas guardadas en un archivo excel, representa estos datos en una grafica polar y promedia los resultados indicando la potencia real e ideal.  </p>
+                
             </div>
         </div>
+    </div>
 
     <!--****************BOOTSTRAP / JAVASCRIP********************-->
     <!--Esta linea sirve para que funcione el modal-->
